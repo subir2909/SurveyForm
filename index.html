@@ -1,0 +1,56 @@
+<!-- Survey Form -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve our website</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter Your Name: <input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+        <label  id="email-label">Enter Your Email: <input id="email" name="email" type="email"  placeholder="Enter your Email ID"  required /></label>
+        <label  id="number-label">Input your age (years): <input id="number" type="number"  placeholder="Enter your age"  name="age" min="18" max="60"/></label> 
+      </fieldset>
+      <fieldset>
+        <label  for="dropdown">How did you hear about us?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Newspaper</option>
+            <option value="2">YouTube Channel</option>
+            <option value="3">Other</option>
+          </select>
+        </label>
+      </fieldset>  
+      <fieldset>
+      <p>Would you recommend the site to your friends ? (required)</p>
+        <label  for="definitely"><input id="recomend" type="radio" name="recomend" class="recomend" value="definitely" checked /> Definitely</label>
+        <label  for="maybe"><input id="business-account" type="radio" name="recomend" class="recomend" value="maybe" /> Maybe</label>
+        <label  for="notsure"><input id="business-account" type="radio" name="recomend" class="recomend" value="notsure" /> Not Sure</label>
+      </fieldset>
+      
+      <fieldset>
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <label  for="improvement">
+        <input class="improvement" id="improvement" type="checkbox"  name="improvement" value="sitecontent"/> Site Content</label>
+        <label  for="improvement">
+        <input class="improvement" id="improvement" type="checkbox"  name="improvement" value="navigation" /> Navigation</label>
+        <label  for="improvement">
+        <input class="improvement" id="improvement" type="checkbox"  name="improvement" value="seo" /> SEO</label>
+        <label  for="improvement">
+        <input class="improvement" id="improvement" type="checkbox"  name="improvement" value="qualityvisuals" /> Quality Visuals</label>
+        <label  for="improvement">
+        <input class="improvement" id="improvement" type="checkbox"  name="improvement" value="security"/> Security</label>
+      </fieldset>  
+      <filedset>
+        <label  for="textarea">Any comments or suggestion:
+          <textarea id="comment" name="comment" rows="3" cols="35" placeholder="Enter your comment here"></textarea>
+        </label>
+        <input type="submit" value="Submit" id="submit"/>
+      </fieldset>  
+    </form>  
+  </body>  
+</html>
